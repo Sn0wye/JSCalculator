@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Variables */
+:root {
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1em 1em;
+  grid-template-areas:
+    'visor visor visor visor'
+    'c AC backspace backspace'
+    'seven eight nine division'
+    'four five six multiplication'
+    'one two three subtraction'
+    'zero dot equal addition';
+  padding: 5rem;
+}
+.visor {
+  grid-area: visor;
+}
+.c {
+  grid-area: c;
+}
+.ac {
+  grid-area: AC;
+}
+.backspace {
+  grid-area: backspace;
+}
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.division {
+  grid-area: division;
+}
+.multiplication {
+  grid-area: multiplication;
+}
+.subtraction {
+  grid-area: subtraction;
+}
+.addition {
+  grid-area: addition;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.zero {
+  grid-area: zero;
+}
+.dot {
+  grid-area: dot;
+}
+.equal {
+  grid-area: equal;
+}
