@@ -17,6 +17,12 @@
 body {
   background-color: #171717;
 }
+/* Button Reset */
+button {
+  all: unset;
+  cursor: pointer;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
