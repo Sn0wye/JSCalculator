@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* root */
+:root {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+//  Variables
+$text-color: #ededed;
+$bg-color: #444444;
+$primary-color: #171717;
+$secondary-color: lightgrey;
+$emphasis: #da0037;
+
+body {
+  background-color: #171717;
+}
+/* Button Reset */
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 1em;
+  grid-template-areas:
+    'visor visor visor visor'
+    'ac c percentage multiplication'
+    'seven eight nine division'
+    'four five six subtraction'
+    'one two three addition'
+    'zero zero dot equal';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  * {
+    color: $text-color;
+    background-color: $bg-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
+      rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    transition: all 500ms;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  *:hover:not(.visor) {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em,
+      rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.1);
+  }
+}
+
+.button {
+  box-shadow: none;
+}
+
+.visor {
+  grid-area: visor;
+}
+.c {
+  grid-area: c;
+  background-color: $secondary-color;
+  color: $primary-color;
+}
+.ac {
+  grid-area: ac;
+  background-color: $secondary-color;
+  color: $primary-color;
+}
+.percentage {
+  grid-area: percentage;
+  background-color: $secondary-color;
+  color: $primary-color;
+}
+.division {
+  grid-area: division;
+  background-color: $emphasis;
+}
+.multiplication {
+  grid-area: multiplication;
+  background-color: $emphasis;
+}
+.subtraction {
+  grid-area: subtraction;
+  background-color: $emphasis;
+}
+.addition {
+  grid-area: addition;
+  background-color: $emphasis;
+}
+.equal {
+  grid-area: equal;
+  background-color: $emphasis;
+}
+.zero {
+  grid-area: zero;
+}
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.dot {
+  grid-area: dot;
+}
