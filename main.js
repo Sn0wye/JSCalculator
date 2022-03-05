@@ -45,7 +45,7 @@ function addVisor(event) {
 };
 
 function equals() {
-  let calc = eval(visor.innerText)
+  let calc = eval(evalCalc)
   console.log(calc)
   visor.innerHTML = calc
 };

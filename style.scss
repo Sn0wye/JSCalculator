@@ -41,6 +41,7 @@ button {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+  max-width: 26rem;
   * {
     color: $text-color;
     background-color: $bg-color;
@@ -74,6 +75,7 @@ button {
 
 .visor {
   grid-area: visor;
+  overflow-x: auto;
 }
 .c {
   grid-area: c;
