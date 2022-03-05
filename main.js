@@ -56,6 +56,7 @@ function allClear() {
 
 function deleteLast() {
   visor.innerHTML = visor.innerHTML.slice(0, -1);
+  evalCalc = evalCalc.slice(0, -1);
 }
 
 function percentageOperations(operation) {
