@@ -30,12 +30,12 @@ button {
   grid-template-rows: repeat(6, 1fr);
   gap: 1em;
   grid-template-areas:
-    'visor visor visor visor'
-    'ac c percentage multiplication'
-    'seven eight nine division'
-    'four five six subtraction'
-    'one two three addition'
-    'zero zero dot equal';
+    "visor visor visor visor"
+    "ac c percentage multiplication"
+    "seven eight nine division"
+    "four five six subtraction"
+    "one two three addition"
+    "zero zero dot equal";
   position: absolute;
   top: 50%;
   left: 50%;
