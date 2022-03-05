@@ -47,6 +47,7 @@ function equals() {
   let calc = eval(evalCalc);
   console.log(calc);
   visor.innerHTML = calc;
+  evalCalc = calc;
 }
 
 function allClear() {
