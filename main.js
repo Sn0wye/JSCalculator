@@ -1,13 +1,18 @@
+"use strict";
 const numberButtons = document.querySelectorAll("[data-number]");
 const operationButtons = document.querySelectorAll("[data-operator]");
 const equalsButton = document.querySelector("[data-equals]");
 const allClearButton = document.querySelector("[data-all-clear]");
 const deleteButton = document.querySelector("[data-delete]");
 const visor = document.querySelector(".visor");
-
 var evalCalc = "";
 
-// add event
+window.addEventListener("keydown", keyPress);
+
+function keyPress({ key }) {
+  const button = document.querySelector(`[data-key='${key}']`);
+  button?.click();
+}
 
 numberButtons.forEach((button) => {
   button.addEventListener("click", addVisor);
