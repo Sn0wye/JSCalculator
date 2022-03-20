@@ -29,7 +29,7 @@ button {
   -ms-grid-rows: (1fr)[6];
       grid-template-rows: repeat(6, 1fr);
   gap: 1em;
-      grid-template-areas: "visor visor visor visor" "ac c percentage multiplication" "seven eight nine division" "four five six subtraction" "one two three addition" "zero zero dot equal";
+      grid-template-areas: 'visor visor visor visor' 'ac c percentage multiplication' 'seven eight nine division' 'four five six subtraction' 'one two three addition' 'zero zero dot equal';
   position: absolute;
   top: 50%;
   left: 50%;
@@ -37,6 +37,7 @@ button {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   max-width: 26rem;
+  min-width: 26rem;
 }
 
 .grid-container * {
@@ -55,7 +56,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 3rem;
+  font-size: 2.4rem;
   -webkit-box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
           box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
   height: 5.75rem;
